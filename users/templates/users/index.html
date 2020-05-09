@@ -1,0 +1,12 @@
+{% extends "users/layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block body %}
+    <h1>Hii! {{ request.user.username }} </h1>
+    {{message}}
+    <hr>
+    <a href="{% url 'logout' %}"><button>logout</button></a>
+{% endblock %}
